@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>job-agent: privacy policy</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { color-scheme: light dark; --bg: #ffffff; --text: #1f2328; --muted: #5b636d; --line: #d9dee3; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #14171a; --text: #e6e9ec; --muted: #9aa3ad; --line: #30363d; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .5rem; }
+  h2 { font-size: 1.2rem; margin: 2.25rem 0 .5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+  p, ul { margin: 0 0 1rem; }
+  li { margin-bottom: .4rem; }
+  a { color: inherit; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>job-agent</h1>
+  <p>job-agent is a private tool that Gidi Fisher built for a personal job search. It is used only with Gidi's own Google account and is not offered to anyone else.</p>
+  <p>Once a day it reads job-alert emails, filters the listings by personal criteria, and writes the matching ones to a private Google Sheet.</p>
+
+  <h2 id="privacy">Privacy policy</h2>
+  <p class="muted">Last updated: 1 November 2026</p>
+
+  <h2>What the tool accesses</h2>
+  <ul>
+    <li><strong>Gmail, read-only.</strong> The tool requests only the messages under one label, which holds job-alert emails. It cannot send, change or delete email.</li>
+    <li><strong>Google Sheets.</strong> The tool writes job listings to one spreadsheet in the same account.</li>
+  </ul>
+
+  <h2>How the data is used</h2>
+  <ul>
+    <li>The tool takes the job title, company, location and similar short details from each alert email.</li>
+    <li>Those job details, together with a short profile of the job seeker, are sent to Anthropic's Claude API to score how well each job fits. Whole emails are not sent.</li>
+    <li>The results are stored in the private Google Sheet.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>The data is not sold, is not used for advertising, and is not shared with anyone apart from the Anthropic scoring step described above.</p>
+
+  <h2>Access and removal</h2>
+  <p>Access tokens are kept private and are never published. Access can be removed at any time from the <a href="https://myaccount.google.com/permissions">Google Account permissions page</a>.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:gidi@artcore.media">gidi@artcore.media</a></p>
+</main>
+</body>
+</html>
